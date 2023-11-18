@@ -1,0 +1,34 @@
+{
+	"name": "simple-timer",
+	"version": "0.1.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"author": "nyamu",
+	"license": "ISC",
+	"dependencies": {
+		"electron-store": "^8.1.0"
+	},
+	"devDependencies": {
+		"electron": "^27.0.4",
+		"electron-builder": "^24.6.4"
+	},
+	"build": {
+		"appId": "com.nyamu.simpletimer",
+		"directories": {
+			"output": "build"
+		},
+		"files": [],
+		"mac": {},
+		"win": {
+			"icon": "assets/win/icon.ico",
+			"target": "nsis"
+		},
+		"nsis": {
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		}
+	}
+}
